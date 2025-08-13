@@ -2,6 +2,7 @@ package com.orangeHRM_Tests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.orangeHRM_Base.BaseClassHRM;
@@ -13,13 +14,13 @@ public class LoginPageTest extends BaseClassHRM {
 	private LoginPage loginPage ;
 	private HomePage homePage;
 	
-	@BeforeMethod
+	@BeforeTest
 		public void setupPages()
 		{
 			loginPage = new LoginPage(getDriver());
 			homePage = new HomePage(getDriver());
 		}
-			@Test
+			@Test (priority=2)
 		public void verifyvalidloginTest()
 		{
 			loginPage.login("admin", "admin123");
@@ -27,7 +28,7 @@ public class LoginPageTest extends BaseClassHRM {
 			homePage.logout();
 			staticwait(2);
 		}
-			@Test
+			@Test(priority=1)
 			public void invalidlogin()
 			{
 				loginPage.login("admin", "admin");
