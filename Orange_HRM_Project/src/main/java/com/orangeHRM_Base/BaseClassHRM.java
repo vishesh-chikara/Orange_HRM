@@ -26,8 +26,7 @@ public class BaseClassHRM {
 	public void loadConfig() throws IOException {
 		pr = new Properties();
 		{
-			FileInputStream fr = new FileInputStream(
-					"C:\\Users\\admin\\Desktop\\Automation\\NewBatch\\Orange_HRM_Project\\src\\main\\resources\\config.properties");
+			FileInputStream fr = new FileInputStream("C:\\Users\\admin\\git\\Orange_HRM\\Orange_HRM_Project\\src\\main\\resources\\config.properties");
 			pr.load(fr);
 		}
 	}

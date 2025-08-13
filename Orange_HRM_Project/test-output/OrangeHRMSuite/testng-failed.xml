@@ -8,10 +8,27 @@
           <include name="loadConfig"/>
           <include name="invalidlogin"/>
           <include name="setupPages"/>
+          <include name="verifyvalidloginTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.orangeHRM_Tests.LoginPageTest -->
+      <class name="com.orangeHRM_Tests.DummyClass2">
+        <methods>
+          <include name="Dummy2"/>
+          <include name="loadConfig"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.orangeHRM_Tests.DummyClass2 -->
+      <class name="com.orangeHRM_Tests.DummyClass">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="Dummy"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.orangeHRM_Tests.DummyClass -->
     </classes>
   </test> <!-- OrangeHRMTest(failed) -->
 </suite> <!-- Failed suite [OrangeHRMSuite] -->

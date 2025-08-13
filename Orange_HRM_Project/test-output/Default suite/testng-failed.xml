@@ -8,6 +8,7 @@
           <include name="loadConfig"/>
           <include name="invalidlogin"/>
           <include name="setupPages"/>
+          <include name="verifyvalidloginTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>

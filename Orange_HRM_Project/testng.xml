@@ -6,6 +6,7 @@
       <class name="com.orangeHRM_Tests.DummyClass"/>
       <class name="com.orangeHRM_Tests.DummyClass2"/>
       <class name="com.orangeHRM_Tests.LoginPageTest"/>
+      <class name="com.orangeHRM_Tests.HomePageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
