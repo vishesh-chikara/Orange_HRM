@@ -1,135 +1,141 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>Orange_HRM_Project</groupId>
-  <artifactId>Orange_HRM_Project</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  
-  <dependencies>
-  <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.11.0</version>
-    <scope>test</scope>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.33.0</version>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-remote-driver</artifactId>
-    <version>4.33.0</version>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/org.seleniumhq.webdriver/webdriver-selenium -->
-<dependency>
-    <groupId>org.seleniumhq.webdriver</groupId>
-    <artifactId>webdriver-selenium</artifactId>
-    <version>0.9.7376</version>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-<dependency>
-    <groupId>io.github.bonigarcia</groupId>
-    <artifactId>webdrivermanager</artifactId>
-    <version>6.1.0</version>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi</artifactId>
-    <version>5.4.1</version>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi-ooxml</artifactId>
-    <version>5.4.1</version>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-<dependency>
-    <groupId>commons-io</groupId>
-    <artifactId>commons-io</artifactId>
-    <version>2.19.0</version>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
-<dependency>
-    <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-core</artifactId>
-    <version>2.25.1</version>
-</dependency>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Orange_HRM_Project</groupId>
+	<artifactId>Orange_HRM_Project</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 
 
-<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
-<dependency>
-    <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-core</artifactId>
-    <version>2.25.0</version>
-</dependency>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.11.0</version>
+			<scope>test</scope>
+		</dependency>
 
-<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-<dependency>
-    <groupId>io.github.bonigarcia</groupId>
-    <artifactId>webdrivermanager</artifactId>
-    <version>6.1.0</version>
-</dependency>
-    </dependencies>
-  
-  
-  <build>
-  		<plugins>
-  				
-  			<!-- https://mvnrepository.com/artifact/org.apache.maven.plugin-tools/maven-plugin-annotations -->
-				<plugin>
-    <groupId>org.apache.maven.plugin-tools</groupId>
-    <artifactId>maven-plugin-annotations</artifactId>
-    <version>3.15.1</version>
-    <configuration>
-    	<source>1.8</source>
-    	<target>1.8</target>
-    </configuration>
-</plugin>
-    
-    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-release-plugin -->
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-release-plugin</artifactId>
-    <version>3.1.1</version>
-</plugin>
-		
-		<!-- https://mvnrepository.com/artifact/org.codehaus.mojo/exec-maven-plugin -->
-<plugin>
-    <groupId>org.codehaus.mojo</groupId>
-    <artifactId>exec-maven-plugin</artifactId>
-    <version>3.5.0</version>
-    
-</plugin>
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.33.0</version>
+		</dependency>
 
-<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-surefire-plugin</artifactId>
-    <version>3.5.3</version>
-  		  <configuration>
-    			<suiteXmlFiles>
-    						<suiteXmlFiles>testng.xml</suiteXmlFiles>
-    				</suiteXmlFiles>
-   				 </configuration>
-			</plugin>			
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-remote-driver</artifactId>
+			<version>4.33.0</version>
+		</dependency>
+
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.webdriver/webdriver-selenium -->
+		<dependency>
+			<groupId>org.seleniumhq.webdriver</groupId>
+			<artifactId>webdriver-selenium</artifactId>
+			<version>0.9.7376</version>
+		</dependency>
+
+		<!--
+		https://mvnrepository.com/artifact/com.github.igor-suhorukov/chromedriver -->
+		<dependency>
+			<groupId>com.github.igor-suhorukov</groupId>
+			<artifactId>chromedriver</artifactId>
+			<version>2.44</version>
+		</dependency>
+
+		<!--
+		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>6.1.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.4.1</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.19.0</version>
+		</dependency>
+
+
+		<!--
+		https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.25.0</version>
+		</dependency>
+
+		<!--
+		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>6.1.0</version>
+		</dependency>
+	</dependencies>
+
+
+	<build>
+		<plugins>
+
+			<!--
+			https://mvnrepository.com/artifact/org.apache.maven.plugin-tools/maven-plugin-annotations -->
+			<plugin>
+				<groupId>org.apache.maven.plugin-tools</groupId>
+				<artifactId>maven-plugin-annotations</artifactId>
+				<version>3.15.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+
+			<!--
+			https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-release-plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>3.1.1</version>
+			</plugin>
+
+			<!--
+			https://mvnrepository.com/artifact/org.codehaus.mojo/exec-maven-plugin -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>3.5.0</version>
+
+			</plugin>
+
+			<!--
+			https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.5.3</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFiles>testng.xml</suiteXmlFiles>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
 		</plugins>
-	 </build>
-  
-  
-  
+	</build>
+
+
 </project>
